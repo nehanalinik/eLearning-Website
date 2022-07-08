@@ -1,0 +1,97 @@
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    height: 10vh;
+    transition: 0.3s ease-in;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-color: $bg_color;
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1240px;
+        width: 100%;
+        margin: auto;
+        padding: 0 1rem;
+        img{
+            width: 100%;
+            height: auto;
+        }
+        .nav-menu-list{
+           display: flex;
+           align-items:  center;
+           column-gap: 2.5rem;
+           font-size: 1.05rem;
+           .nav-item{
+            transition: 0.3s all ease-in;
+            &:hover{
+                padding: 0.15rem 0.35rem ;
+                border: 1px solid transparent;
+                border-image: $gradient_color;
+                border-image-slice: 1;
+                border-radius: 0.3rem;
+            }
+           }
+        }
+
+        .hamburger{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .header{
+        max-width: 100%;
+        .navbar{
+            max-width: 100%;
+            .hamburger{
+                display: block;
+                cursor: pointer;
+            }
+            .nav-menu-list{
+                position: fixed;
+                left: -100%;
+                top: 10vh;
+                flex-direction: column;
+                row-gap: 4rem;
+                background-color: rgba(0, 0, 0, 0.928);
+                width: 100%;
+                height: 90vh;
+                z-index: 99;
+                text-align: center;
+                transition: 0.3s;
+                display: flex;
+                align-items: center;
+                padding-top: 2rem;
+                .nav-item{
+                    transition: 0.3s all ease-in;
+                    font-size: 1.15rem;
+                    &:hover{
+                        padding: 0.15rem 0.35rem ;
+                        border: 1px solid;
+                        border-image-source: $gradient_color;
+                        border-image-slice: 1;
+
+                        background: linear-gradient(180deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0.1) 100%);
+                        box-shadow: 0px 1.08499px 6.50993px -0.271247px rgba(0, 0, 0, 0.2);
+                        width: 75%;
+                    }
+                   }
+            }
+            .nav-menu-list.active{
+                left: 0;
+            }
+            img{
+                width: 150px;
+            }
+        }
+    }
+}
+
+
+

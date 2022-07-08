@@ -1,0 +1,54 @@
+.courses{
+    max-width: 1240px;
+    width: 100%;
+    margin: auto;
+    margin-top: 15vh;
+    padding: 2rem 0 3rem;
+    position: relative;
+    .heading {
+        text-align: center;
+        padding: 1rem 0;
+
+        h2 {
+            font-size: 2.125rem;
+            color: $primary_white;
+        }
+
+        .underline {
+            position: relative;
+            display: inline-block;
+
+            img {
+                position: absolute;
+                top: -1.75rem;
+                left: -1rem;
+            }
+        }
+    }
+    .bg_img{
+        &:after{
+            content: "";
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            top: 20rem;
+            z-index: -1;
+            background: #5AD3BE;
+            box-shadow: -13.0526px 0px 19.5789px rgba(255, 255, 255, 0.1), 13.0526px 0px 16.9684px rgba(255, 255, 255, 0.1), inset -13.0526px 3.91579px 14.3579px #18BB9F, inset 13.0526px 3.91579px 14.3579px #02A78A;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            background: rgba(235, 71, 77, 0.124);
+            box-shadow: inset 31.3874px -31.3874px 31.3874px rgba(179, 54, 59, 0.124), inset -31.3874px 31.3874px 31.3874px rgba(255, 255, 255, 0.124);
+            backdrop-filter: blur(188.324px);
+            border-radius: 50%;
+            top: 35rem;
+            right: 15rem;
+            z-index: -1;
+        }
+    }
+}

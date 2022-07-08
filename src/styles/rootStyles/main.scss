@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&family=Kreon:wght@300;400;500;600;700&display=swap');
+*,*::after, *::before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+$bg_color: #181818;
+$primary_red: #E51B23;
+$primary_cyan: #5AD3BE; 
+$primary_white: #F8F8F8;
+$primary_blue: #78A9F4;
+$gray: #DCDCDC;
+$gradient_color: linear-gradient(150.61deg, #EB474D 2.6%, #F143C1 30.75%, #6EB393 62.93%, #1BB8DD 99.13%);
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+html{
+    font-size: 16px;
+}
+a{
+    color: $primary_white;
+}
+a, input, textarea, button{
+    font-family: 'Kreon', serif;
+}
+body{
+    font-family: 'Jaldi', sans-serif;
+    font-family: 'Kreon', serif;
+    background-color: $bg_color;
+    overflow-x: hidden;
+}
+@mixin primaryBtn($font_size) {
+    padding: 0.75rem 1.45rem;
+    background-color: $primary_red;
+    color: $primary_white;
+    font-weight:500;
+    letter-spacing: 0.055rem;
+    font-size: $font_size;
+    cursor: pointer;
+    transition: 0.3s all ease-in;
+    border-radius: 50px;
+    &:hover{
+        background-color: $primary_cyan;
+    }
+}
+
+
+@import '../navbar.scss';
+@import '../hero.scss';
+@import '../features.scss';
+@import '../courses.scss';
+@import '../coursesList.scss';
+@import '../categories.scss';
+@import '../faq.scss';
+@import '../contact.scss';
+@import '../footer.scss';

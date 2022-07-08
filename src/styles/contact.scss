@@ -1,0 +1,147 @@
+.contacts{
+    max-width: 1240px;
+    width: 100%;
+    margin: auto;
+    padding:5rem 0;
+    position: relative;
+    .heading {
+        text-align: center;
+        padding: 1rem 0;
+
+        h2 {
+            font-size: 2.125rem;
+            color: $primary_white;
+        }
+
+        .underline {
+            position: relative;
+            display: inline-block;
+
+            img {
+                position: absolute;
+                top: -1.75rem;
+                left: -1rem;
+            }
+        }
+        h3{
+            font-size: 1.45rem;
+            padding: 1rem 0;
+            color: $primary_white;
+            font-weight: 400;
+        }
+        p{
+            font-size: 1.25rem;
+            color: gray;
+            font-weight: 400;
+            padding: 0.5rem 0 1rem;
+        }
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        .contact_form{
+            display: flex;
+            flex-direction: column;
+            // align-items: center;
+            justify-content: center;
+            row-gap: 1rem;
+            width: 70%;
+            margin: auto;
+            padding: 1rem 0;
+            .input_elements{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                row-gap: 1.25rem;
+                input{
+                    width: 100%;
+                    padding: 0.65rem 1rem;
+                    background-color: transparent;
+                    border: 1px solid;
+                    border-image-slice: 1;
+                    border-image-source: linear-gradient(150.61deg, #EB474D 2.6%, #F143C1 34.77%, #6EB393 70.47%, #1BB8DD 99.13%);
+                    font-size: 1rem;
+                    font-weight: 300;
+                    letter-spacing: 0.035rem;
+                    &:focus{
+                        outline: none;
+                        color: $primary_white;
+                    }
+                }
+            }
+            .textarea_element{
+                display: flex;
+                align-items: center;
+                textarea{
+                    width: 100%;
+                    margin: auto;
+                    padding: 0.65rem 1rem;
+                    background-color: transparent;
+                    border: 1px solid;
+                    border-image-slice: 1;
+                    border-image-source: linear-gradient(150.61deg, #EB474D 2.6%, #F143C1 34.77%, #6EB393 70.47%, #1BB8DD 99.13%);
+                    font-size: 1rem;
+                    font-weight: 300;
+                    letter-spacing: 0.035rem;
+                    &:focus{
+                        outline: none;
+                        color: $primary_white;
+                    }
+                }
+            }
+            button{
+                @include primaryBtn(1.025rem);
+                display: block;
+            }
+        }
+        .contact_social{
+            padding: 2rem 0 2.25rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h3{
+                color: $primary_white;
+                padding: 2rem 0;
+                text-align: center;
+                font-weight: 400;
+            }
+            .social_icons{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                column-gap: 2rem;
+            }
+        }
+    }
+    .bg_img{
+        &:after{
+
+            position: absolute;
+            content: "";
+            width: 50px;
+            height: 50px;
+            background: #EB474D;
+            box-shadow: -14.2632px 0px 21.3947px rgba(255, 255, 255, 0.1), 14.2632px 0px 18.5421px rgba(255, 255, 255, 0.1), inset -14.2632px 4.27895px 15.6895px rgba(255, 143, 148, 0.38), inset 14.2632px 4.27895px 15.6895px rgba(254, 104, 109, 0.4);
+            border-radius: 50%;
+            top: 18rem;
+            right: 10rem;
+            z-index: -1;
+        }
+        &:before{
+            position: absolute;
+            content: "";
+            width: 80px;
+            height: 80px;
+            background: #5AD3BE;
+            box-shadow: -13.0526px 0px 19.5789px rgba(255, 255, 255, 0.1), 13.0526px 0px 16.9684px rgba(255, 255, 255, 0.1), inset -13.0526px 3.91579px 14.3579px #18BB9F, inset 13.0526px 3.91579px 14.3579px #02A78A;
+            border-radius: 50%;
+            bottom: 18rem;
+            left: 8rem;
+            z-index: -1;
+        }
+    }
+}
