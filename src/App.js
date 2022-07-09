@@ -1,6 +1,5 @@
 import Navbar from "./components/Navbar";
 import "./styles/rootStyles/main.scss";
-import { BrowserRouter } from "react-router-dom";
 import Hero from "./components/Hero";
 import Features from "./components/Features";
 import Courses from "./components/Courses";
@@ -10,7 +9,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <Navbar />
       <Hero />
       <Features />
@@ -18,7 +17,7 @@ function App() {
       <Faq />
       <Contact />
       <Footer />
-    </BrowserRouter>
+    </>
   );
 }
 

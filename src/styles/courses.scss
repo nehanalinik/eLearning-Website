@@ -3,7 +3,7 @@
     width: 100%;
     margin: auto;
     margin-top: 15vh;
-    padding: 2rem 0 3rem;
+    padding: 3.5rem 0 3rem;
     position: relative;
     .heading {
         text-align: center;
@@ -49,6 +49,20 @@
             top: 35rem;
             right: 15rem;
             z-index: -1;
+        }
+        span{
+            &:after{
+                content: "";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: #5AD3BE;
+            box-shadow: -14.3158px 0px 21.4737px rgba(255, 255, 255, 0.1), 14.3158px 0px 18.6105px rgba(255, 255, 255, 0.1), inset -14.3158px 4.29474px 15.7474px #18BB9F, inset 14.3158px 4.29474px 15.7474px #02A78A;
+            border-radius: 50%;
+            bottom: 3rem;
+            right: 2rem;
+            z-index: -1;
+            }
         }
     }
 }

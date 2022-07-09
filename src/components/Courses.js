@@ -11,7 +11,7 @@ const allCategories = [
 
 const Courses = () => {
   const [courseList, setCourseList] = useState(CoursesHelper);
-  const [categories, setCategories] = useState(allCategories);
+  const [categories] = useState(allCategories);
 
   const filterItems = (category) => {
     if (category === "all") {
@@ -23,7 +23,7 @@ const Courses = () => {
   };
 
   return (
-    <section className="courses">
+    <section className="courses" id="courses">
       <div className="heading">
         <h2>Courses</h2>
         <div className="underline">
@@ -32,7 +32,9 @@ const Courses = () => {
       </div>
       <Categories categories={categories} filterItems={filterItems} />
       <CoursesList items={courseList} />
-      <div className="bg_img"></div>
+      <div className="bg_img">
+        <span></span>
+      </div>
     </section>
   );
 };

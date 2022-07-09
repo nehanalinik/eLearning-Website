@@ -20,6 +20,7 @@
         img{
             width: 100%;
             height: auto;
+            cursor: pointer;
         }
         .nav-menu-list{
            display: flex;
@@ -28,6 +29,7 @@
            font-size: 1.05rem;
            .nav-item{
             transition: 0.3s all ease-in;
+            cursor: pointer;
             &:hover{
                 padding: 0.15rem 0.35rem ;
                 border: 1px solid transparent;
@@ -71,6 +73,7 @@
                 .nav-item{
                     transition: 0.3s all ease-in;
                     font-size: 1.15rem;
+                    cursor: pointer;
                     &:hover{
                         padding: 0.15rem 0.35rem ;
                         border: 1px solid;

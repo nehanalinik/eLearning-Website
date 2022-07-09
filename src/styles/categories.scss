@@ -2,24 +2,46 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 1rem;
+    column-gap: 1.35rem;
     margin: 4rem 0;
     .filter_btn{
-       padding: 0.25rem 0.45rem;
        font-size: 1.25rem;
        letter-spacing: 0.02rem;
        color: $primary_white;
        background-color: $bg_color;
        text-transform: capitalize;
-        transition: 0.3s all ease-in;
+        white-space: nowrap;
+        cursor: pointer;
+        transition: 0.3s all ease;
             &:hover{
                 padding: 0.25rem 0.45rem;
-               transition: 0.3s all ease-in;
                 border: 1px solid transparent;
                 border-image: $gradient_color;
                 border-image-slice: 1;
                 border-radius: 0.3rem;
             }
        
+    }
+}
+@media screen and (max-width: 1115px) {
+    .btn-container{
+        .filter_btn{
+           padding: 0.2rem 0.3rem;
+           font-size: 1.05rem;
+           &:hover{
+            padding: 0.2rem 0.3rem;
+        }
+     }
+    }
+}
+@media screen and (max-width: 940px) {
+    .btn-container{
+        .filter_btn{
+           padding: 0.15rem 0.35rem;
+           font-size: 0.98rem;
+           &:hover{
+            padding: 0.15rem 0.35rem;
+        }
+     }
     }
 }

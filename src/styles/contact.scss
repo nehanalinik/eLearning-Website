@@ -46,7 +46,6 @@
         .contact_form{
             display: flex;
             flex-direction: column;
-            // align-items: center;
             justify-content: center;
             row-gap: 1rem;
             width: 70%;
@@ -54,9 +53,9 @@
             padding: 1rem 0;
             .input_elements{
                 display: flex;
-                align-items: center;
-                flex-direction: column;
-                row-gap: 1.25rem;
+                flex-direction: row;
+                column-gap:2rem;
+                width: 100%;
                 input{
                     width: 100%;
                     padding: 0.65rem 1rem;
@@ -64,6 +63,9 @@
                     border: 1px solid;
                     border-image-slice: 1;
                     border-image-source: linear-gradient(150.61deg, #EB474D 2.6%, #F143C1 34.77%, #6EB393 70.47%, #1BB8DD 99.13%);
+                    background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.04) 100%);
+                    box-shadow: 0px 2.77507px 16.6504px -0.693767px rgba(0, 0, 0, 0.2);
+                    backdrop-filter: blur(27.7507px);
                     font-size: 1rem;
                     font-weight: 300;
                     letter-spacing: 0.035rem;
@@ -84,6 +86,9 @@
                     border: 1px solid;
                     border-image-slice: 1;
                     border-image-source: linear-gradient(150.61deg, #EB474D 2.6%, #F143C1 34.77%, #6EB393 70.47%, #1BB8DD 99.13%);
+                    background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.04) 100%);
+                    box-shadow: 0px 2.77507px 16.6504px -0.693767px rgba(0, 0, 0, 0.2);
+                    backdrop-filter: blur(27.7507px);
                     font-size: 1rem;
                     font-weight: 300;
                     letter-spacing: 0.035rem;
@@ -96,6 +101,9 @@
             button{
                 @include primaryBtn(1.025rem);
                 display: block;
+                &:hover{
+                    color: $bg_color;
+                }
             }
         }
         .contact_social{
@@ -114,6 +122,12 @@
                 align-items: center;
                 justify-content: center;
                 column-gap: 2rem;
+                .socialicon{
+                    transition: 0.3s all ease-in;
+                    &:hover{
+                        filter: invert(81%) sepia(11%) saturate(1778%) hue-rotate(117deg) brightness(92%) contrast(88%);
+                    }
+                }
             }
         }
     }
@@ -143,5 +157,12 @@
             left: 8rem;
             z-index: -1;
         }
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .input_elements{
+        flex-direction: column !important;
+        row-gap:1.5rem;
     }
 }

@@ -46,6 +46,11 @@
                 padding: 1rem 2rem;
                 column-gap: 1rem;
                 margin-top: 1.25rem;
+                &:hover{
+                    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.03) 100%);
+                    box-shadow: 0px 2.77507px 16.6504px -0.693767px rgba(0, 0, 0, 0.2);
+                    backdrop-filter: blur(27.7507px);
+                }
 
                 h4{
                     font-family: 'Jaldi', sans-serif;
@@ -79,14 +84,14 @@
         &:after{
             content: "";
             position: absolute;
-            width: 250px;
-            height: 250px;
+            width: 150px;
+            height: 150px;
             background: rgba(235, 71, 77, 0.124);
             box-shadow: inset 31.3874px -31.3874px 31.3874px rgba(179, 54, 59, 0.124), inset -31.3874px 31.3874px 31.3874px rgba(255, 255, 255, 0.124);
             backdrop-filter: blur(188.324px);
             border-radius: 50%;
-            top: 15rem;
-            right: 0;
+            bottom: 5rem;
+            right: 15rem;
             z-index: -1;
       }
       &:before{

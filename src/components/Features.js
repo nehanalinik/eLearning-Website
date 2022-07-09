@@ -10,7 +10,7 @@ import underline from "../images/underline.png";
 
 const Features = () => {
   return (
-    <section className="features">
+    <section className="features" id="features">
       <div className="heading">
         <h2>Features</h2>
         <div className="underline">

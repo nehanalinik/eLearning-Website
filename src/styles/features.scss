@@ -4,12 +4,9 @@
     margin: auto;
     margin-top: 15vh;
     display: grid;
-    row-gap: 2rem;
-    padding: 2rem 0 3rem;
+    padding: 4rem 0 3rem;
     .heading {
         text-align: center;
-        padding: 1rem 0;
-
         h2 {
             font-size: 2.125rem;
             color: $primary_white;
@@ -31,7 +28,6 @@
         margin: auto;
         display: flex;
         flex-direction:column;
-        row-gap: 2rem;
         position: relative;
         .courses{
             display: flex;
@@ -45,11 +41,17 @@
             border-image-slice: 1;
             padding: 1rem 1.25rem;
             flex-direction: row;
+            transition: 0.3s all ease-in;
+            &:hover{
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.1) 100%, rgba(255, 255, 255, 0.08) 100%);
+                box-shadow: 0px 2.77507px 16.6504px -0.693767px rgba(0, 0, 0, 0.2);
+                backdrop-filter: blur(27.7507px);
+            }
            .content{
             width: 100%;
             display: flex;
             flex-direction: column;
-            row-gap: 2rem;
+            row-gap: 1.85rem;
             .title-coursetype{
                 display: flex;
                 align-items: center;
@@ -132,13 +134,13 @@
                 position: absolute;
                 content: "";
                 background-color: $primary_cyan;
-                width: 165px;
-                height: 165px;
+                width: 155px;
+                height: 155px;
                 border-radius:100px;
                 box-shadow: -8.47368px 0px 12.7105px rgba(255, 255, 255, 0.1), 8.47368px 0px 11.0158px rgba(255, 255, 255, 0.1), inset -8.47368px 2.54211px 9.32105px #18BB9F, inset 8.47368px 2.54211px 9.32105px #02A78A;
                 z-index: -1;
-                bottom: -1rem;
-                left: -8rem;
+                bottom: 10rem;
+                left: 4rem;
             }
             span{
                 position: absolute;

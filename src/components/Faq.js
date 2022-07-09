@@ -4,10 +4,10 @@ import FaqHelper from "../Helper/FaqHelper";
 import SingleQuestion from "./SingleQuestion";
 
 const Faq = () => {
-  const [questions, setQuestions] = useState(FaqHelper);
+  const [questions] = useState(FaqHelper);
 
   return (
-    <section className="faq">
+    <section className="faq" id="faqs">
       <div className="heading">
         <h2>FAQs</h2>
         <div className="underline">

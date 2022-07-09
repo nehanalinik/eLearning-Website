@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 const Contact = () => {
   return (
-    <section className="contacts">
+    <section className="contacts" id="contact">
       <div className="heading">
         <h2>Contact</h2>
         <div className="underline">
@@ -19,7 +19,7 @@ const Contact = () => {
         <p>Share it with us in the following way.</p>
       </div>
       <div className="content">
-        <div className="contact_form">
+        <form className="contact_form">
           <div className="input_elements">
             <input type="text" placeholder="Your Name" />
             <input type="text" placeholder="Topic of discussion" />
@@ -28,15 +28,35 @@ const Contact = () => {
             <textarea cols="20" rows="10" placeholder="Your Message"></textarea>
           </div>
           <button>Send</button>
-        </div>
+        </form>
         <div className="contact_social">
           <h3>Or connect with us on</h3>
           <div className="social_icons">
-            <FaFacebookSquare style={{ color: "#5AD3BE" }} size={28} />
-            <FaTwitterSquare style={{ color: "#5AD3BE" }} size={28} />
-            <FaInstagramSquare style={{ color: "#5AD3BE" }} size={28} />
-            <FaGithubSquare style={{ color: "#5AD3BE" }} size={28} />
-            <FaYoutubeSquare style={{ color: "#5AD3BE" }} size={28} />
+            <FaFacebookSquare
+              style={{ color: "#646464" }}
+              size={28}
+              className="socialicon"
+            />
+            <FaTwitterSquare
+              style={{ color: "#646464" }}
+              size={28}
+              className="socialicon"
+            />
+            <FaInstagramSquare
+              style={{ color: "#646464" }}
+              size={28}
+              className="socialicon"
+            />
+            <FaGithubSquare
+              style={{ color: "#646464" }}
+              size={28}
+              className="socialicon"
+            />
+            <FaYoutubeSquare
+              style={{ color: "#646464" }}
+              size={28}
+              className="socialicon"
+            />
           </div>
         </div>
       </div>
