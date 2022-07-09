@@ -4,10 +4,10 @@ This is a project build for a eLearning Website using React.
 
 ## Technologies Used
 
-React
-Sass
-React Scroll
-React Icons
+- React
+- Sass
+- React Scroll
+- React Icons
 
 ### `run in your browser`
 
