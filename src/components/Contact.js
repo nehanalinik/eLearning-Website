@@ -7,6 +7,7 @@ import {
   FaGithubSquare,
   FaYoutubeSquare,
 } from "react-icons/fa";
+import { BsDiscord } from "react-icons/bs";
 const Contact = () => {
   return (
     <section className="contacts" id="contact">
@@ -22,6 +23,7 @@ const Contact = () => {
         <form className="contact_form">
           <div className="input_elements">
             <input type="text" placeholder="Your Name" />
+            <input type="email" placeholder="Your Email" />
             <input type="text" placeholder="Topic of discussion" />
           </div>
           <div className="textarea_element">
@@ -50,6 +52,11 @@ const Contact = () => {
             <FaGithubSquare
               style={{ color: "#646464" }}
               size={28}
+              className="socialicon"
+            />
+            <BsDiscord
+              style={{ color: "#646464" }}
+              size={27.5}
               className="socialicon"
             />
             <FaYoutubeSquare

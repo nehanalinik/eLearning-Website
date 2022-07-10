@@ -1,10 +1,11 @@
-.courses{
+.courses {
     max-width: 1240px;
     width: 100%;
     margin: auto;
     margin-top: 15vh;
     padding: 3.5rem 0 3rem;
     position: relative;
+
     .heading {
         text-align: center;
         padding: 1rem 0;
@@ -25,8 +26,9 @@
             }
         }
     }
-    .bg_img{
-        &:after{
+
+    .bg_img {
+        &:after {
             content: "";
             position: absolute;
             width: 80px;
@@ -37,7 +39,8 @@
             background: #5AD3BE;
             box-shadow: -13.0526px 0px 19.5789px rgba(255, 255, 255, 0.1), 13.0526px 0px 16.9684px rgba(255, 255, 255, 0.1), inset -13.0526px 3.91579px 14.3579px #18BB9F, inset 13.0526px 3.91579px 14.3579px #02A78A;
         }
-        &::before{
+
+        &::before {
             content: "";
             position: absolute;
             width: 250px;
@@ -50,18 +53,78 @@
             right: 15rem;
             z-index: -1;
         }
-        span{
-            &:after{
+
+        span {
+            &:after {
                 content: "";
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            background: #5AD3BE;
-            box-shadow: -14.3158px 0px 21.4737px rgba(255, 255, 255, 0.1), 14.3158px 0px 18.6105px rgba(255, 255, 255, 0.1), inset -14.3158px 4.29474px 15.7474px #18BB9F, inset 14.3158px 4.29474px 15.7474px #02A78A;
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                background: #5AD3BE;
+                box-shadow: -14.3158px 0px 21.4737px rgba(255, 255, 255, 0.1), 14.3158px 0px 18.6105px rgba(255, 255, 255, 0.1), inset -14.3158px 4.29474px 15.7474px #18BB9F, inset 14.3158px 4.29474px 15.7474px #02A78A;
+                border-radius: 50%;
+                bottom: 3rem;
+                right: 2rem;
+                z-index: -1;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 540px){
+    .bg_img{
+        &:after {
+            width: 40px !important;
+            height: 40px !important;
             border-radius: 50%;
-            bottom: 3rem;
-            right: 2rem;
+            top: 19rem !important;
+            left: 3rem !important;
             z-index: -1;
+            background: #5AD3BE;
+            box-shadow: -13.0526px 0px 19.5789px rgba(255, 255, 255, 0.1), 13.0526px 0px 16.9684px rgba(255, 255, 255, 0.1), inset -13.0526px 3.91579px 14.3579px #18BB9F, inset 13.0526px 3.91579px 14.3579px #02A78A;
+        }
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .bg_img {
+        &:after {
+            width: 40px !important;
+            height: 40px !important;
+            border-radius: 50%;
+            top: 19rem !important;
+            left: 3rem !important;
+            z-index: -1;
+            background: #5AD3BE;
+            box-shadow: -13.0526px 0px 19.5789px rgba(255, 255, 255, 0.1), 13.0526px 0px 16.9684px rgba(255, 255, 255, 0.1), inset -13.0526px 3.91579px 14.3579px #18BB9F, inset 13.0526px 3.91579px 14.3579px #02A78A;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 150px !important;
+            height: 150px !important;
+            background: rgba(235, 71, 77, 0.124);
+            box-shadow: inset 31.3874px -31.3874px 31.3874px rgba(179, 54, 59, 0.124), inset -31.3874px 31.3874px 31.3874px rgba(255, 255, 255, 0.124);
+            backdrop-filter: blur(188.324px);
+            border-radius: 50%;
+            top: 35rem;
+            right: 17rem !important;
+            z-index: -1;
+        }
+
+        span {
+            &:after {
+                content: "";
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                background: #5AD3BE;
+                box-shadow: -14.3158px 0px 21.4737px rgba(255, 255, 255, 0.1), 14.3158px 0px 18.6105px rgba(255, 255, 255, 0.1), inset -14.3158px 4.29474px 15.7474px #18BB9F, inset 14.3158px 4.29474px 15.7474px #02A78A;
+                border-radius: 50%;
+                bottom: 3rem;
+                right: 2rem;
+                z-index: -1;
             }
         }
     }
