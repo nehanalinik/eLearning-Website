@@ -96,5 +96,14 @@
     }
 }
 
-
+@media (max-width: 400px){
+    .header{
+        width: 90%;
+        .navbar{
+            .nav-menu-list{
+                width: 90%;
+            }
+        }
+    }
+}
 

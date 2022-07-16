@@ -262,3 +262,21 @@
         }
     }
 }
+
+@media (max-width: 400px){
+    .features{
+        .feature-courses{
+            .courses{
+                .image{
+                    width: 100%;
+                    img{
+                        width: 90%;
+                        margin-left: 50%;
+                        transform: translateX(-50%);
+                        
+                    }
+                }
+            }
+        }
+    }
+}

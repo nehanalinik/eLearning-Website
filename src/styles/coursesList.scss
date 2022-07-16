@@ -113,3 +113,20 @@
         grid-template-columns: 1fr  ;
     }
 }
+
+@media (max-width: 400px){
+    .courses_list{
+        // padding: 1rem 6rem;
+        .coursesList{
+            width: 280px;
+            .image{
+                width: 100%;
+                img{
+                    width: 90%;
+                    margin-left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+}

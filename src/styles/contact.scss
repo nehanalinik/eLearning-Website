@@ -221,3 +221,19 @@
     }
   }
 }
+
+@media (max-width: 400px){
+  .contacts{
+    h3{
+      width: 85%;
+      margin: auto;
+    }
+  }
+  .content{
+    .contact_social{
+      .social_icons{
+        width: 85%;
+      }
+    }
+  }
+}
