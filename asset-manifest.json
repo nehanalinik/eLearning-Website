@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/eLearning-Website/static/css/main.dd7a17de.css",
-    "main.js": "/eLearning-Website/static/js/main.7972de41.js",
-    "static/media/headerImage.png": "/eLearning-Website/static/media/headerImage.dbc14b1aa5830b813fb5.png",
+    "main.css": "/eLearning-Website/static/css/main.c230b6b8.css",
+    "main.js": "/eLearning-Website/static/js/main.9697a2bd.js",
+    "static/media/HeroImg.png": "/eLearning-Website/static/media/HeroImg.0325940eca138ca497d8.png",
     "static/media/course-1.png": "/eLearning-Website/static/media/course-1.1cd190cfe593bc1de29e.png",
     "static/media/java-course.png": "/eLearning-Website/static/media/java-course.4e14a58da34984c0beca.png",
     "static/media/course-4.png": "/eLearning-Website/static/media/course-4.0157fd2639349647e15d.png",
@@ -13,11 +13,11 @@
     "static/media/course-5.png": "/eLearning-Website/static/media/course-5.e0aeede64567c9eef314.png",
     "static/media/course-6.png": "/eLearning-Website/static/media/course-6.292061b317d005211cf6.png",
     "index.html": "/eLearning-Website/index.html",
-    "main.dd7a17de.css.map": "/eLearning-Website/static/css/main.dd7a17de.css.map",
-    "main.7972de41.js.map": "/eLearning-Website/static/js/main.7972de41.js.map"
+    "main.c230b6b8.css.map": "/eLearning-Website/static/css/main.c230b6b8.css.map",
+    "main.9697a2bd.js.map": "/eLearning-Website/static/js/main.9697a2bd.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd7a17de.css",
-    "static/js/main.7972de41.js"
+    "static/css/main.c230b6b8.css",
+    "static/js/main.9697a2bd.js"
   ]
 }
