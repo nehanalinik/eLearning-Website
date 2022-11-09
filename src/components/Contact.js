@@ -29,7 +29,9 @@ const Contact = () => {
           <div className="textarea_element">
             <textarea cols="20" rows="10" placeholder="Your Message"></textarea>
           </div>
-          <button>Send</button>
+          <div className="btn_element">
+            <button>Send</button>
+          </div>
         </form>
         <div className="contact_social">
           <h3>Or connect with us on</h3>

@@ -1,5 +1,6 @@
 import React from "react";
-import heroImg from "../images/headerImage.png";
+// import heroImg from "../images/headerImage.png";
+import heroImg from "../images/HeroImg.png";
 import { Link } from "react-scroll";
 
 const Hero = () => {

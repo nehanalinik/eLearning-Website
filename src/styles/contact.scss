@@ -121,13 +121,14 @@
           }
         }
       }
-      button {
-        @include primaryBtn(1.025rem);
-        display: block;
-        &:hover {
-          color: $bg_color;
+      .btn_element{
+        display: flex;
+        justify-content: center;
+        button {
+          @include primaryBtn(1.025rem);
+          width: 30%;
         }
-      }
+    }
     }
     .contact_social {
       padding: 2rem 0 2.25rem;

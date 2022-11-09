@@ -57,6 +57,7 @@ body{
     border-radius: 50px;
     &:hover{
         background-color: $primary_cyan;
+        color: $bg_color !important;
     }
 }
 
